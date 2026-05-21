@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | PetSkin AI</title>
+    <meta name="description" content="PetSkin AI Privacy Policy">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #F8F3E8;
+            --surface: #FFFFFF;
+            --surface-muted: #F5EFE0;
+            --accent: #829E76;
+            --accent-dark: #5C7350;
+            --accent-soft: #E3EBD7;
+            --text-primary: #212E21;
+            --text-secondary: #666E63;
+            --text-tertiary: #9EA499;
+            --border: #EDE8DD;
+            --danger: #C76E57;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Noto Sans KR", "Noto Sans JP", sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: var(--accent-soft);
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--accent);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        .logo-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent-dark);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            background: var(--surface);
+            padding: 14px 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-top: 40px;
+            margin-bottom: 14px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+
+        h2:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        p {
+            font-size: 15.5px;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+        }
+
+        ul {
+            margin: 14px 0 14px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            font-size: 15.5px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .highlight {
+            background: #FFF4E6;
+            border-left: 4px solid var(--danger);
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 16px 0;
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent-dark);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-soft);
+        }
+
+        a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .footer {
+            margin-top: 56px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-tertiary);
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-bottom: 4px;
+        }
+
+        .lang-switcher {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 6px;
+            display: flex;
+            gap: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            z-index: 100;
+        }
+
+        .lang-link {
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border: none;
+            transition: all 0.15s;
+        }
+
+        .lang-link:hover {
+            background: var(--surface-muted);
+        }
+
+        .lang-link.active {
+            background: var(--accent);
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 20px 60px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 18px;
+                margin-top: 32px;
+            }
+
+            .lang-switcher {
+                top: 12px;
+                right: 12px;
+            }
+
+            .lang-link {
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="lang-switcher">
+        <a href="privacy-ko.html" class="lang-link">한국어</a>
+        <a href="privacy-en.html" class="lang-link active">EN</a>
+        <a href="privacy-ja.html" class="lang-link">日本語</a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">🐾</div>
+                <div class="logo-text">PetSkin AI</div>
+            </div>
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">Your photos and analysis records are not transmitted externally and are stored only on your device.</div>
+        </div>
+
+        
+<h2>1. Overview</h2>
+<p>PetSkin AI (hereinafter "this App") takes the protection of user personal information seriously and complies with relevant laws and regulations. This policy describes what information this App collects, how it is used, and how it is protected.</p>
+
+<h2>2. Information We Collect</h2>
+<p>This App processes the following information only within your device:</p>
+<ul>
+    <li><strong>Captured photos</strong>: Used for analysis and stored only on your device.</li>
+    <li><strong>Analysis results</strong>: Analysis labels, confidence levels, and timestamps are stored only on your device.</li>
+    <li><strong>Advertising information</strong>: For ad display, advertising identifiers (IDFA), device information, and approximate location information may be transmitted to Google AdMob.</li>
+</ul>
+
+<h2>3. Information Storage Location</h2>
+<p>Captured photos and analysis records are stored only within your device (in the app sandbox) and are not transmitted to external servers. All data is deleted when you uninstall the app.</p>
+<p>AI analysis is performed directly on your device (on-device inference). Photos are not transmitted externally for analysis.</p>
+
+<h2>4. Advertising and Tracking</h2>
+<p>This App displays ads through Google AdMob. The following information may be transmitted to Google for ad service operation:</p>
+<ul>
+    <li>Advertising identifier (IDFA)</li>
+    <li>Device model, OS version, language settings</li>
+    <li>Approximate location information (IP-based)</li>
+    <li>Ad viewing and click information</li>
+</ul>
+<p>On iOS 14 and later, the app requests "App Tracking Transparency" permission on launch. If you deny this permission, advertising identifiers will not be transmitted and non-personalized ads will be displayed. You can change this permission anytime via iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
+<p>For details on Google's privacy practices, please refer to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+
+<h2>5. Camera Permission</h2>
+<p>This App requires camera access permission to photograph your pet's skin condition. The analysis feature cannot be used without this permission. You can change this permission in iOS Settings &gt; PetSkin AI.</p>
+
+<h2>6. Third-Party Sharing and Outsourcing</h2>
+<p>This App does not provide or outsource user information to third parties, except to Google AdMob for ad display.</p>
+
+<h2>7. Information Retention and Deletion</h2>
+<p>Your photos and analysis records are kept on your device until you delete them or uninstall the app. Analysis records can be individually deleted from Menu &gt; Analysis History.</p>
+
+<h2>8. Your Rights</h2>
+<p>Users can view and delete information collected by this App at any time. Since all information is stored on your device, you can manage it directly within the app.</p>
+
+<h2>9. Children Under 14</h2>
+<p>This App is not directed at children under 14, and we do not knowingly collect personal information from children.</p>
+
+<h2>10. Changes to This Policy</h2>
+<p>This policy may be revised due to changes in laws or services. Material changes will be communicated through app updates.</p>
+
+<h2>11. Contact</h2>
+<p>For inquiries about personal information handling, please use the in-app Menu &gt; Contact.</p>
+
+
+        <div class="footer">
+            <p>Last Updated: May 2026</p>
+            <p>Effective Date: May 2026</p>
+        </div>
+    </div>
+</body>
+</html>

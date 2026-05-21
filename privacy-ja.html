@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー | PetSkin AI</title>
+    <meta name="description" content="ペットスキン AI プライバシーポリシー">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #F8F3E8;
+            --surface: #FFFFFF;
+            --surface-muted: #F5EFE0;
+            --accent: #829E76;
+            --accent-dark: #5C7350;
+            --accent-soft: #E3EBD7;
+            --text-primary: #212E21;
+            --text-secondary: #666E63;
+            --text-tertiary: #9EA499;
+            --border: #EDE8DD;
+            --danger: #C76E57;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Noto Sans KR", "Noto Sans JP", sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: var(--accent-soft);
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--accent);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        .logo-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent-dark);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            background: var(--surface);
+            padding: 14px 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-top: 40px;
+            margin-bottom: 14px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+
+        h2:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        p {
+            font-size: 15.5px;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+        }
+
+        ul {
+            margin: 14px 0 14px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            font-size: 15.5px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .highlight {
+            background: #FFF4E6;
+            border-left: 4px solid var(--danger);
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 16px 0;
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent-dark);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-soft);
+        }
+
+        a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .footer {
+            margin-top: 56px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-tertiary);
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-bottom: 4px;
+        }
+
+        .lang-switcher {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 6px;
+            display: flex;
+            gap: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            z-index: 100;
+        }
+
+        .lang-link {
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border: none;
+            transition: all 0.15s;
+        }
+
+        .lang-link:hover {
+            background: var(--surface-muted);
+        }
+
+        .lang-link.active {
+            background: var(--accent);
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 20px 60px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 18px;
+                margin-top: 32px;
+            }
+
+            .lang-switcher {
+                top: 12px;
+                right: 12px;
+            }
+
+            .lang-link {
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="lang-switcher">
+        <a href="privacy-ko.html" class="lang-link">한국어</a>
+        <a href="privacy-en.html" class="lang-link">EN</a>
+        <a href="privacy-ja.html" class="lang-link active">日本語</a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">🐾</div>
+                <div class="logo-text">ペットスキン AI</div>
+            </div>
+            <h1>プライバシーポリシー</h1>
+            <div class="subtitle">ユーザーの写真と分析記録は外部に送信されず、端末にのみ保存されます。</div>
+        </div>
+
+        
+<h2>1. 概要</h2>
+<p>ペットスキン AI(以下「本アプリ」)はユーザーの個人情報保護を重要視し、関連法令を遵守します。本ポリシーは、本アプリがどのような情報を収集し、どのように利用し、どのように保護するかについて説明します。</p>
+
+<h2>2. 収集する情報</h2>
+<p>本アプリは以下の情報をユーザーの端末内でのみ処理します。</p>
+<ul>
+    <li><strong>撮影された写真</strong>: 分析のために使用され、ユーザーの端末にのみ保存されます。</li>
+    <li><strong>分析結果</strong>: 分析ラベル、信頼度、分析日時がユーザーの端末にのみ保存されます。</li>
+    <li><strong>広告関連情報</strong>: 広告表示のため、広告識別子(IDFA)、端末情報、おおよその位置情報などがGoogle AdMobに送信される場合があります。</li>
+</ul>
+
+<h2>3. 情報の保存場所</h2>
+<p>撮影された写真と分析記録はユーザーの端末内(アプリサンドボックス)にのみ保存され、外部サーバーには送信されません。アプリを削除するとすべてのデータも一緒に削除されます。</p>
+<p>AI分析はユーザーの端末で直接実行されます(オンデバイス推論)。写真は分析のために外部に送信されません。</p>
+
+<h2>4. 広告とトラッキング</h2>
+<p>本アプリはGoogle AdMobを通じて広告を表示します。広告サービスの運営のため、以下の情報がGoogleに送信される場合があります。</p>
+<ul>
+    <li>広告識別子(IDFA)</li>
+    <li>端末モデル、OSバージョン、言語設定</li>
+    <li>おおよその位置情報(IPベース)</li>
+    <li>広告視聴およびクリック情報</li>
+</ul>
+<p>iOS 14以降では、アプリ起動時に「トラッキング許可」を要求します。許可を拒否すると広告識別子は送信されず、パーソナライズされていない広告が表示されます。許可はいつでもiOSの設定 &gt; プライバシーとセキュリティ &gt; トラッキングメニューから変更できます。</p>
+<p>Googleの個人情報処理の詳細については、<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleプライバシーポリシー</a>をご参照ください。</p>
+
+<h2>5. カメラの権限</h2>
+<p>本アプリは、ペットの皮膚の状態を撮影するためにカメラへのアクセス権限が必要です。権限を許可しない場合、分析機能を使用できません。権限はiOSの設定 &gt; ペットスキン AIから変更できます。</p>
+
+<h2>6. 第三者への提供および委託</h2>
+<p>本アプリは広告表示のためのGoogle AdMobを除き、ユーザーの情報を第三者に提供または委託しません。</p>
+
+<h2>7. 情報の保管および削除</h2>
+<p>ユーザーの写真と分析記録は、ユーザーが直接削除するかアプリを削除するまで端末内に保管されます。分析記録はメニュー &gt; 分析履歴から個別に削除できます。</p>
+
+<h2>8. ユーザーの権利</h2>
+<p>ユーザーは本アプリが収集した情報をいつでも確認し、削除することができます。すべての情報はユーザーの端末に保存されるため、アプリ内で直接管理できます。</p>
+
+<h2>9. 14歳未満の児童について</h2>
+<p>本アプリは14歳未満の児童を対象としておらず、意図的に児童の個人情報を収集することはありません。</p>
+
+<h2>10. ポリシーの変更</h2>
+<p>本ポリシーは法令またはサービスの変更により改定される場合があります。重要な変更がある場合は、アプリのアップデートを通じてお知らせします。</p>
+
+<h2>11. お問い合わせ</h2>
+<p>個人情報の取り扱いに関するお問い合わせは、アプリ内のメニュー &gt; お問い合わせからお送りください。</p>
+
+
+        <div class="footer">
+            <p>最終更新: 2026年5月</p>
+            <p>施行日: 2026年5月</p>
+        </div>
+    </div>
+</body>
+</html>

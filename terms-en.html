@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | PetSkin AI</title>
+    <meta name="description" content="PetSkin AI Terms of Service">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #F8F3E8;
+            --surface: #FFFFFF;
+            --surface-muted: #F5EFE0;
+            --accent: #829E76;
+            --accent-dark: #5C7350;
+            --accent-soft: #E3EBD7;
+            --text-primary: #212E21;
+            --text-secondary: #666E63;
+            --text-tertiary: #9EA499;
+            --border: #EDE8DD;
+            --danger: #C76E57;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Noto Sans KR", "Noto Sans JP", sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: var(--accent-soft);
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--accent);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        .logo-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent-dark);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            background: var(--surface);
+            padding: 14px 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-top: 40px;
+            margin-bottom: 14px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+
+        h2:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        p {
+            font-size: 15.5px;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+        }
+
+        ul {
+            margin: 14px 0 14px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            font-size: 15.5px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .highlight {
+            background: #FFF4E6;
+            border-left: 4px solid var(--danger);
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 16px 0;
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent-dark);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-soft);
+        }
+
+        a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .footer {
+            margin-top: 56px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-tertiary);
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-bottom: 4px;
+        }
+
+        .lang-switcher {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 6px;
+            display: flex;
+            gap: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            z-index: 100;
+        }
+
+        .lang-link {
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border: none;
+            transition: all 0.15s;
+        }
+
+        .lang-link:hover {
+            background: var(--surface-muted);
+        }
+
+        .lang-link.active {
+            background: var(--accent);
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 20px 60px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 18px;
+                margin-top: 32px;
+            }
+
+            .lang-switcher {
+                top: 12px;
+                right: 12px;
+            }
+
+            .lang-link {
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="lang-switcher">
+        <a href="terms-ko.html" class="lang-link">한국어</a>
+        <a href="terms-en.html" class="lang-link active">EN</a>
+        <a href="terms-ja.html" class="lang-link">日本語</a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">🐾</div>
+                <div class="logo-text">PetSkin AI</div>
+            </div>
+            <h1>Terms of Service</h1>
+            <div class="subtitle">Using this app constitutes agreement to these terms.</div>
+        </div>
+
+        
+<h2>Article 1 (Purpose)</h2>
+<p>These Terms govern the conditions and procedures for using the pet skin analysis support service provided by PetSkin AI (hereinafter "this App"), as well as the rights and obligations of the user and the operator.</p>
+
+<h2>Article 2 (Nature of Service)</h2>
+<p>This App is a service that analyzes the visual characteristics of pet skin using artificial intelligence and provides reference information.</p>
+<div class="highlight">
+    <p><strong>This App does not constitute medical practice and does not replace veterinary care.</strong> The analysis results from this App should only be used as supplementary information for diagnosis. Actual diagnosis and treatment must be performed through direct examination by a veterinarian.</p>
+</div>
+
+<h2>Article 3 (Limitations of AI Analysis)</h2>
+<p>The AI model in this App operates within the scope of its training data. The following limitations may exist, and users should be aware of these when using the service:</p>
+<ul>
+    <li>Results may vary depending on photo quality, lighting, and angle.</li>
+    <li>Results may differ from the actual condition.</li>
+    <li>Conditions not included in the training data may not be identified.</li>
+    <li>The confidence level indicates only the model's certainty and does not guarantee accuracy.</li>
+</ul>
+
+<h2>Article 4 (Limitation of Liability)</h2>
+<p>The operator makes no warranty regarding the accuracy, completeness, or suitability of information provided by this App.</p>
+<p>Users are responsible for all consequences resulting from reliance on information from this App, and the operator shall not be legally liable for the following:</p>
+<ul>
+    <li>Direct or indirect damages arising from the use of analysis results from this App</li>
+    <li>Damages caused by failing to seek or delaying veterinary care</li>
+    <li>Damages caused by misunderstanding information in this App</li>
+    <li>Service interruptions due to circumstances beyond the operator's control, including natural disasters and communication failures</li>
+</ul>
+<div class="highlight">
+    <p><strong>In emergency situations (severe bleeding, difficulty breathing, loss of consciousness, etc.), please go to a veterinary clinic immediately without waiting for results from this App.</strong></p>
+</div>
+
+<h2>Article 5 (Ad Viewing)</h2>
+<p>This App may require ad viewing in exchange for providing analysis results. Users can receive analysis results by consenting to view ads.</p>
+<p>Ads are provided through Google AdMob, and responsibility for ad content lies with the advertisers. Please refer to the separate Privacy Policy for information processing related to ads.</p>
+
+<h2>Article 6 (User Obligations)</h2>
+<p>Users must comply with the following when using this App:</p>
+<ul>
+    <li>Do not use the results of this App as the basis for medical diagnosis or prescription</li>
+    <li>Do not reproduce, distribute, or commercially use information obtained through this App without authorization</li>
+    <li>Do not photograph other people's pets without permission</li>
+    <li>Do not engage in activities that interfere with the normal operation of this App</li>
+</ul>
+
+<h2>Article 7 (Intellectual Property)</h2>
+<p>All rights to the content, design, code, and AI model of this App belong to the operator. Users may not reproduce, distribute, or modify these without prior consent from the operator.</p>
+<p>Rights to data generated by users within this App (captured photos and analysis records) belong to the users.</p>
+
+<h2>Article 8 (Service Changes and Suspension)</h2>
+<p>The operator may change the content of the service or suspend it temporarily or permanently without prior notice. The operator shall not be liable for any damages resulting from this.</p>
+
+<h2>Article 9 (Changes to Terms)</h2>
+<p>These Terms may be revised due to changes in relevant laws or services. Revised Terms will be applied through app updates. If users do not agree to the revised Terms, they may discontinue using the app.</p>
+
+<h2>Article 10 (Governing Law)</h2>
+<p>These Terms shall be interpreted according to the laws of the Republic of Korea. Disputes related to these Terms shall be resolved at the Cheongju District Court.</p>
+
+
+        <div class="footer">
+            <p>Last Updated: May 2026</p>
+            <p>Effective Date: May 2026</p>
+        </div>
+    </div>
+</body>
+</html>
