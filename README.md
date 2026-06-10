@@ -1,6 +1,6 @@
-# 펫스킨 AI - 법적 문서 HTML (한국어/영어/일본어)
+# 펫스킨 AI - 법적 문서 HTML (한국어/영어/일본어/중국어(간체))
 
-GitHub Pages (goldman79.github.io)에 올릴 6개 HTML 파일.
+GitHub Pages (goldman79.github.io)에 올릴 8개 HTML 파일.
 
 ---
 
@@ -11,9 +11,11 @@ GitHub Pages (goldman79.github.io)에 올릴 6개 HTML 파일.
 | `privacy-ko.html` | 한국어 개인정보 처리방침 | https://goldman79.github.io/privacy-ko.html |
 | `privacy-en.html` | 영어 Privacy Policy | https://goldman79.github.io/privacy-en.html |
 | `privacy-ja.html` | 일본어 プライバシーポリシー | https://goldman79.github.io/privacy-ja.html |
+| `privacy-zh-Hans.html` | 중국어 个人信息处理方针 | https://goldman79.github.io/privacy-zh-Hans.html |
 | `terms-ko.html` | 한국어 이용약관 | https://goldman79.github.io/terms-ko.html |
 | `terms-en.html` | 영어 Terms of Service | https://goldman79.github.io/terms-en.html |
 | `terms-ja.html` | 일본어 利用規約 | https://goldman79.github.io/terms-ja.html |
+| `terms-zh-Hans.html` | 중국어 使用条款 | https://goldman79.github.io/terms-zh-Hans.html |
 
 ---
 
@@ -23,7 +25,7 @@ GitHub Pages (goldman79.github.io)에 올릴 6개 HTML 파일.
 
 1. https://github.com/goldman79/goldman79.github.io 접속
 2. **Add file → Upload files**
-3. 6개 HTML 파일 드래그 앤 드롭
+3. 8개 HTML 파일 드래그 앤 드롭
 4. **Commit changes**
 
 기존 `index.html`은 그대로 두셔도 되고, 원하시면:
@@ -34,7 +36,7 @@ GitHub Pages (goldman79.github.io)에 올릴 6개 HTML 파일.
 
 ```bash
 cd ~/path/to/goldman79.github.io
-# HTML 파일 6개 복사
+# HTML 파일 8개 복사
 git add .
 git commit -m "Add multilingual privacy & terms pages"
 git push
@@ -46,9 +48,11 @@ git push
 - https://goldman79.github.io/privacy-ko.html
 - https://goldman79.github.io/privacy-en.html
 - https://goldman79.github.io/privacy-ja.html
+- https://goldman79.github.io/privacy-zh-Hans.html
 - https://goldman79.github.io/terms-ko.html
 - https://goldman79.github.io/terms-en.html
 - https://goldman79.github.io/terms-ja.html
+- https://goldman79.github.io/terms-zh-Hans.html
 
 GitHub Pages 반영까지 보통 1~2분 소요.
 
